@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 .main{
@@ -59,4 +60,22 @@ margin-top: 40px;
 p{
 font-size: 25px;
 line-height: 1.5;
+}
+
+.floatingButton{
+    position: fixed;
+    top: 20px;
+    right: 150px;
+height:50px;
+width: 180px;
+background: blueviolet;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor:pointer;
+}
+
+.href{
+    color: white !important;
 }
