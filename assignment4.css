@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.floatingButton.right.next {
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+    height: 35px;
+    width: 150px;
+    background: blueviolet;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px
+  }
+
+  .floatingButton.left.next {
+    position: fixed;
+    bottom: 20px;
+    left: 5%;
+    height: 35px;
+    width: 150px;
+    background: blueviolet;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .href {
+    color: white !important;
+    height: inherit;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

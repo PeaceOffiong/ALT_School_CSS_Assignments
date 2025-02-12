@@ -17,7 +17,7 @@ body {
 .product-card {
     position: relative;
     background: white;
-    max-width: 400px;
+    max-width: 450px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: 20px;
@@ -41,12 +41,15 @@ body {
 .product-image {
     width: 100%;
     margin-bottom: 5px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .product-image img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
 }
 
 .product-info{
@@ -60,9 +63,9 @@ body {
 }
 
 .product-info h2 span {
-    font-weight: 600;
+    font-weight: 500;
     color: #666;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .product-info p {
@@ -70,11 +73,6 @@ body {
     line-height: 1.1;
     font-size: 16px;
     font-weight: 600;
-}
-
-img{
-  width: 100%;
-  border-radius: 0 !important;
 }
 
 .floatingButton.right.next {
@@ -104,11 +102,13 @@ img{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    font-size: 12px;
 }
 
 .href {
     color: white !important;
     height: inherit;
+    width: 100%;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +118,7 @@ img{
 @media (max-width: 768px) {
     .product-card {
         margin: 10px;
-        padding: 15px;
+        border-radius: 15px;
     }
 
     .product-info h2 {
@@ -132,6 +132,11 @@ img{
     .badge {
         font-size: 12px;
         padding: 4px 12px;
+    }
+    img{
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
     }
 }
 
