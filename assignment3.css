@@ -3,7 +3,79 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none;
-  }
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b4b0d4;
+    font-family: Arial, sans-serif;
+}
+
+.product-card {
+    position: relative;
+    background: white;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.badge {
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    background-color: #fff9c4;
+    padding: 8px 15px;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.product-image {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.product-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-info{
+  padding: 20px;
+}
+
+.product-info h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.product-info h2 span {
+    font-weight: 600;
+    color: #666;
+    font-size: 15px;
+}
+
+.product-info p {
+    color: #666;
+    line-height: 1.1;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+img{
+  width: 100%;
+  border-radius: 0 !important;
+}
 
 .floatingButton.right.next {
     position: fixed;
@@ -18,9 +90,9 @@
     justify-content: center;
     cursor: pointer;
     font-size: 12px
-  }
+}
 
-  .floatingButton.left.next {
+.floatingButton.left.next {
     position: fixed;
     bottom: 20px;
     left: 5%;
@@ -32,13 +104,40 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-  }
+}
 
-  
-  .href {
+.href {
     color: white !important;
     height: inherit;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .product-card {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .product-info h2 {
+        font-size: 20px;
+    }
+
+    .product-info p {
+        font-size: 14px;
+    }
+
+    .badge {
+        font-size: 12px;
+        padding: 4px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .floatingButton.right.next,
+    .floatingButton.left.next {
+        width: 100px;
+    }
+}
