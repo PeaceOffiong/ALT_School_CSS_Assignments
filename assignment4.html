@@ -7,8 +7,80 @@
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <p>Incoming ...</p>
+    <main class="body">
+      <section class="left-section">
+        <div class="img-container">
+          <img src="./assets/logo.svg" alt="" srcset="" />
+        </div>
+        <h1>For Individuals</h1>
+        <p class="text-one">
+          Start benefiting from the wellness experience. For companies looking
+          on increasing productivity, and improving organization wellness.
+        </p>
+      </section>
+      <section class="right-section">
+        <div class="form">
+          <div class="group">
+            <div class="label">
+              <label for="firstName">First Name</label>
+              <input type="text" name="firstName" id="firstName" placeholder="Tolu"/>
+            </div>
+            <div class="label">
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Ahmed"/>
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="label">
+              <label for="">Gender</label>
+              <select name="" id="" placeholder="Select here">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="non-binary">Non binary</option>
+              </select>
+            </div>
+            <div class="label">
+              <label for="date">Date</label>
+              <input type="date" name="date" id="" placeholder="Select here" />
+            </div>
+          </div>
+
+          <div class="group">
+            <div class="label">
+              <label for="weight">Weight(KG)</label>
+              <input type="text" name="weight" id="weight" placeholder="Enter height"/>
+            </div>
+            <div class="label">
+              <label for="height">Height(CM)</label>
+              <input type="text" name="height" id="height" placeholder="Enter height" />
+            </div>
+          </div>
+
+          <div class="group special" >
+            <label for="">Activity Level</label>
+            <select name="activityLevel" id="activityLevel" placeholder="Select here">
+              <option value="">Level 1</option>
+              <option value="">Level 2</option>
+              <option value="">Level 3</option>
+              <option value="">Level 4</option>
+            </select>
+          </div>
+
+          <div class="group special icon">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" />
+            <img src="./assets/eyeIcon.svg" alt="eyeIcon" class="eyeIcon" />
+          </div>
+
+          <button type="button" class="button">Register</button>
+          <p class="text">
+            By clicking Register, you agree to our <span>Terms of Use</span> and
+            our <span>Privacy Policy</span>
+          </p>
+        </div>
+      </section>
+
       <div class="floatingButton right next">
         <a href="./assignment5.html" class="href">Next</a>
       </div>

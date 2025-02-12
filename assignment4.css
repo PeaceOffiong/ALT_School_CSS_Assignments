@@ -1,45 +1,238 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Sofia Sans", serif;
+  font-optical-sizing: auto;
+}
+
+.body {
+  height: 100vh;
+  display: flex;
+  width: 100%;
+  background-color: #f6faf9;
+}
+
+.text-one {
+  max-width: 460px;
+}
+
+.right-section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8%;
+}
+
+.left-section {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 8%;
+  padding-bottom: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.img-container {
+  padding-bottom: 45px;
+}
+
+.left-section h1 {
+  padding-left: 10px;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #000b0a;
+  padding-bottom: 20px;
+}
+
+.left-section p {
+  padding-left: 10px;
+  color: #737373;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.form {
+  background-color: white;
+  width: auto;
+  height: auto;
+  padding: 6%;
+  box-shadow: 0px 4px 50px 0px #0408131a;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 6px;
+}
+
+.group {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+.label {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  width: 50%;
+}
+
+.label label {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+.group input,
+.group select {
+  height: 45px;
 }
 
 .floatingButton.right.next {
-    position: fixed;
-    bottom: 20px;
-    right: 5%;
-    height: 35px;
-    width: 150px;
-    background: blueviolet;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 12px
-  }
+  position: fixed;
+  bottom: 20px;
+  right: 5%;
+  height: 35px;
+  width: 150px;
+  background: blueviolet;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+}
 
-  .floatingButton.left.next {
-    position: fixed;
-    bottom: 20px;
-    left: 5%;
-    height: 35px;
-    width: 150px;
-    background: blueviolet;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    font-size: 12px;
-  }
+.floatingButton.left.next {
+  position: fixed;
+  bottom: 20px;
+  left: 5%;
+  height: 35px;
+  width: 150px;
+  background: blueviolet;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+}
 
-  .href {
-    color: white !important;
-    height: inherit;
-    width: 100%;    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.href {
+  color: white !important;
+  height: inherit;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.group.special {
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 600;
+}
+
+.button {
+  height: 45px;
+  background-color: #2ec4b6;
+  border: 0;
+  border: 2px;
+  font-size: 16px;
+  color: white;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+input:focus,
+select:focus {
+  outline: 1px solid #2EC4B6;
+  border-color: #2EC4B6;
+}
+
+input,
+select {
+  border: 1px solid #f0f0f0;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #737373;
+}
+
+span {
+  color: #2ec4b6;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.group.special.icon {
+  position: relative;
+}
+
+.eyeIcon {
+  position: absolute;
+  top: 35px;
+  right: 10px;
+  height: 16px;
+  width: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+  .body {
+    flex-direction: column;
+    height: auto;
   }
+  .right-section {
+    width: 100%;
+  }
+  .left-section {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .right-section {
+    width: 100%;
+    padding: 0 5%;
+  }
+  .img-container {
+    padding-bottom: 35px;
+  }
+  .img-container img {
+    height: 100px;
+    width: 80px;
+    padding-top: 30px;
+    padding-right: 20px;
+  }
+  .left-section h1 {
+    padding-left: 0px;
+  }
+  .left-section p {
+    padding-left: 0px;
+  }
+  .label {
+    width: 100%;
+  }
+  .group {
+    flex-direction: column;
+  }
+  .form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
