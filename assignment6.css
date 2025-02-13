@@ -20,7 +20,10 @@ h1 {
 }
 
 body {
-  background: linear-gradient(180deg, #ffffff 0%, #f9faff 100%);
+  background: linear-gradient(180deg, #fdefef 0%, #fdefef 20%, #ffffff 20%, #ffffff 100%);
+  backdrop-filter: blur(700px);
+  /* background: #fac0c0; */
+
   min-height: 100vh;
 }
 
@@ -56,9 +59,8 @@ body {
   color: #0065fe;
 }
 
-.special.two{
-    color: #005AE2;
-
+.special.two {
+  color: #005ae2;
 }
 
 .sectionOne {
@@ -77,62 +79,65 @@ body {
   position: relative;
 }
 
-.it{
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    padding-top: 32px;
-    gap:56px;
-    padding-bottom: 52px;
+.it {
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  padding-top: 32px;
+  gap: 56px;
+  padding-bottom: 52px;
 }
 
 .sectionOne > div {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 76px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 76px;
 }
 
 .image2 {
-    background: linear-gradient(to right,  #E8EBFF 15%, #FFFFFF 100%);
-    border-radius: 24px;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
-    position: relative;
-    overflow: hidden;
+  background: linear-gradient(to right, #e8ebff 15%, #ffffff 100%);
+  border-radius: 24px;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.03);
+  position: relative;
+  overflow: hidden;
 }
 
 .image2::after {
-    content: '';
-    position: absolute;
-    right: -10%;
-    top: 50%;
-    transform: translateY(50%);
-    width: 40%;
-    height: 140%;
-    background: linear-gradient(180deg, rgba(232, 235, 255, 0.7) 0%, rgba(255, 255, 255, 0) 100%);
-    border-radius: 50%;
-    z-index: 2;
+  content: "";
+  position: absolute;
+  right: -10%;
+  top: 50%;
+  transform: translateY(50%);
+  width: 40%;
+  height: 140%;
+  background: linear-gradient(
+    180deg,
+    rgba(232, 235, 255, 0.7) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  border-radius: 50%;
+  z-index: 2;
 }
 
 .image2 img[src*="arrow"] {
-    color: #0065FE;
+  color: #0065fe;
 }
 
 .image1 {
-    position: absolute;
-    top: 50%;
-    left:-20%;
-    transform: translateY(-50%);
-    z-index: 0;
-    width: 100%;
+  position: absolute;
+  top: 50%;
+  left: -20%;
+  transform: translateY(-50%);
+  z-index: 0;
+  width: 100%;
 }
 
 .flex img {
   width: 170px;
   margin-top: -20px;
   position: relative;
-  
 }
 
 .sectionOne h1 {
@@ -141,17 +146,17 @@ body {
   width: 75%;
 }
 
-.sectionOne h1 special{
-    display: flex;
-    width: auto
+.sectionOne h1 special {
+  display: flex;
+  width: auto;
 }
 
-.sectionOne .paragraph{
-    font-size: 18px;
-    line-height: 28px;
-    width: 781px;
-    padding: 12px;
-    font-family: "Gilroy-medium", sans-serif;
+.sectionOne .paragraph {
+  font-size: 18px;
+  line-height: 28px;
+  width: 781px;
+  padding: 12px;
+  font-family: "Gilroy-medium", sans-serif;
 }
 
 .login {
@@ -164,6 +169,31 @@ body {
   border-radius: 100px;
   color: white;
   cursor: pointer;
+}
+
+.image3 {
+  height: 93px;
+  width: 100%;
+}
+
+.sectionTwo {
+  background-color: #f9fbfd;
+  height: 220px;
+  display: flex;
+  align-items: center;
+}
+
+.sectionTwo .first.div {
+  font-size: 40px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionTwo .second.div {
+  width: 60%;
+  display: flex;
 }
 
 .floatingButton.right.next {
