@@ -20,10 +20,15 @@ h1 {
 }
 
 body {
-  background: linear-gradient(180deg, #fdefef 0%, #fdefef 20%, #ffffff 20%, #ffffff 100%);
+  background: linear-gradient(
+    180deg,
+    #fdefef 0%,
+    #fdefef 20%,
+    #ffffff 20%,
+    #ffffff 100%
+  );
   backdrop-filter: blur(700px);
-  /* background: #fac0c0; */
-
+  font-family: "Gilroy-Medium", sans-serif;
   min-height: 100vh;
 }
 
@@ -151,9 +156,12 @@ body {
   width: auto;
 }
 
-.sectionOne .paragraph {
+.paragraph {
   font-size: 18px;
   line-height: 28px;
+}
+
+.sectionOne .paragraph {
   width: 781px;
   padding: 12px;
   font-family: "Gilroy-medium", sans-serif;
@@ -181,6 +189,7 @@ body {
   height: 220px;
   display: flex;
   align-items: center;
+  gap: 120px;
 }
 
 .sectionTwo .first.div {
@@ -189,11 +198,62 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: full;
+  margin: 25px;
 }
 
 .sectionTwo .second.div {
   width: 60%;
   display: flex;
+  gap: 65px;
+}
+
+.sectionTwo .second.div div {
+  width: auto;
+}
+
+.sectionTwo .second.div div p {
+  font-size: 14px;
+}
+
+.sectionThree {
+  background: white;
+  padding: 100px;
+  display: flex;
+  gap: 96px;
+}
+
+.sectionThree div h1 {
+  font-size: 40px;
+}
+
+.sectionThree div p {
+  font-size: 16px;
+}
+
+.firstOfThree {
+  width: 55%;
+}
+
+.firstOfThree div {
+  display: flex;
+  gap: 8px;
+  width: 55%;
+  align-items: flex-start;
+}
+
+firstOfThree div img{
+    padding-bottom: 15px;
+}
+
+.SecondOfThree {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.SecondOfThree > div{
+    width: 340px;
 }
 
 .floatingButton.right.next {
