@@ -198,7 +198,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: full;
+  height: 100%;
   margin: 25px;
 }
 
@@ -218,13 +218,15 @@ body {
 
 .sectionThree {
   background: white;
-  padding: 100px;
+  padding: 120px 75px;
   display: flex;
   gap: 96px;
+  width: 100%;
 }
 
 .sectionThree div h1 {
   font-size: 40px;
+  width: 100%;
 }
 
 .sectionThree div p {
@@ -232,43 +234,94 @@ body {
 }
 
 .firstOfThree {
-  width: 55%;
+  width: 45%;
 }
 
 .firstOfThree div {
   display: flex;
   gap: 8px;
-  width: 55%;
+  width: 100%;
   align-items: flex-start;
 }
 
-firstOfThree div img{
-    padding-bottom: 15px;
+.pass img {
+  padding-top: 10px;
+}
+
+.SecondOfThree > div {
+  width: 340px;
 }
 
 .SecondOfThree {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.SecondOfThree > div{
-    width: 340px;
-}
-
-.floatingButton.right.next {
-  position: fixed;
-  bottom: 20px;
-  right: 5%;
-  height: 35px;
-  width: 150px;
-  background: blueviolet;
-  border-radius: 8px;
   display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+}
+
+.SecondOfThree div img {
+  padding-bottom: 40px;
+}
+
+.SecondOfThree div h2 {
+  padding-bottom: 16px;
+}
+
+.SecondOfThree div p {
+  line-height: 28px;
+  font-size: 16px;
+}
+
+.spec {
+  padding-top: 64px;
+}
+
+.sectionFour {
+  padding-top: 130px;
+  padding-bottom: 68px;
+  text-align: center;
+  gap: 8px;
+}
+
+.sectionFour div {
+  display: flex;
+  font-size: 40px;
+  gap: 8px;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
-  font-size: 12px;
+}
+
+.sectionFour p {
+  color: #141414;
+}
+
+.sectionFive {
+  display: flex;
+  height: 630px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 330px;
+}
+
+.group {
+  width: 379px;
+  height: 455px;
+  border-radius: 12px;
+  border: 0.4px solid #005ae2;
+  box-shadow: 0px 4px 8px 0px #0000000D;
+}
+
+.center {
+  position: absolute;
+  width: 379px;
+  top: 0;
+  height: 630px;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px 0px #0000000d;
+  background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
+  z-index: 2;
 }
 
 .floatingButton.left.next {
