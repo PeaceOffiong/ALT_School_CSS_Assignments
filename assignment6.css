@@ -347,3 +347,62 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 0 20px;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu {
+    display: block;
+    z-index: 2;
+  }
+
+  .middle, .end-right {
+    position: fixed;
+    top: 90px;
+    right: -100%;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 20px 0;
+  }
+
+  .middle {
+    gap: 20px;
+  }
+
+  .end-right {
+    top: calc(90px + 200px);
+  }
+
+  #nav-toggle:checked ~ .middle,
+  #nav-toggle:checked ~ .end-right {
+    right: 0;
+  }
+
+  .middle a {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .end-right {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
