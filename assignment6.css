@@ -31,6 +31,7 @@ body {
   backdrop-filter: blur(700px);
   font-family: "Gilroy-Medium", sans-serif;
   min-height: 100vh;
+  position: relative;
 }
 
 .nav {
@@ -405,29 +406,6 @@ aside .right {
   color: white;
 }
 
-.floatingButton.left.next {
-  position: fixed;
-  bottom: 20px;
-  left: 5%;
-  height: 35px;
-  width: 150px;
-  background: blueviolet;
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 12px;
-}
-
-.href {
-  color: white !important;
-  height: inherit;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .hamburger-menu {
   display: none;
@@ -488,3 +466,34 @@ aside .right {
     gap: 12px;
   }
 }
+
+.floatingButton.left.next {
+  position: fixed !important;
+  bottom: 20px !important;
+  left: 20px !important;
+  height: 35px;
+  width: 150px;
+  background: blueviolet;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  z-index: 99999 !important;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  will-change: transform;
+  pointer-events: auto;
+}
+
+.href {
+  color: white !important;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
