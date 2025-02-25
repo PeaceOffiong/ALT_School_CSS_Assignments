@@ -30,7 +30,7 @@ body {
   );
   backdrop-filter: blur(700px);
   font-family: "Gilroy-Medium", sans-serif;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   position: relative;
 }
 
@@ -406,7 +406,6 @@ aside .right {
   color: white;
 }
 
-
 .hamburger-menu {
   display: none;
   cursor: pointer;
@@ -414,6 +413,86 @@ aside .right {
 }
 
 #nav-toggle {
+  display: none;
+}
+
+.sectionSix {
+  background-image: url("./assets/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 523px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  padding: 42px;
+  width: 476px;
+  height: 355px;
+  border-radius: 12px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.input-text {
+  height: 55px !important;
+  padding: 12px;
+
+  /* align-items: center;
+    justify-content: center; */
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #3284ff;
+  outline: #3284ff;
+}
+
+.input-text::placeholder {
+  color: #3284ff;
+}
+
+.box div {
+  display: flex;
+  gap: 12px;
+}
+
+.box button{
+  height: 48px;
+  border-radius: 100px;
+  border: none;
+  background-color: #005AE2;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.box p{
+  font-size: 14px;
+  line-height: 20px;
+  color: #3284FF;
+}
+
+select {
+  color: #3284ff;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233284ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+  padding-right: 30px;
+}
+
+select::-ms-expand {
   display: none;
 }
 
@@ -481,7 +560,7 @@ aside .right {
   cursor: pointer;
   font-size: 12px;
   z-index: 99999 !important;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transform: translateZ(0);
   -webkit-transform: translateZ(0);
   will-change: transform;
@@ -496,4 +575,3 @@ aside .right {
   align-items: center;
   justify-content: center;
 }
-
