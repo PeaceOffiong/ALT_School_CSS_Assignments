@@ -660,3 +660,14 @@ select::-ms-expand {
 .faq-toggle:checked ~ .faq-content {
   max-height: 500px;
 }
+
+.sectionEight {
+  background-image: url("./assets/background3.svg");
+  background-position: cover;
+  height: 299px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
