@@ -256,6 +256,10 @@ ul{
   align-items: center;
 }
 
+.last-sec img{
+  border-radius: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .hamburger-menu {
     display: block;

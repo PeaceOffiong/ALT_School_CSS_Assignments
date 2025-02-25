@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   color: inherit;
+  list-style: none;
 }
 
 @font-face {
@@ -302,6 +303,7 @@ body {
   justify-content: center;
   position: relative;
   gap: 330px;
+  margin-bottom: 68px;
 }
 
 .group {
@@ -309,7 +311,81 @@ body {
   height: 455px;
   border-radius: 12px;
   border: 0.4px solid #005ae2;
-  box-shadow: 0px 4px 8px 0px #0000000D;
+  box-shadow: 0px 4px 8px 0px #0000000d;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 24px;
+  padding-bottom: 45px;
+}
+
+.group h3,
+.center .center-text h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 400;
+  padding-bottom: 24px;
+}
+
+.group h1,
+.center .center-text h1 {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+.group .group-p,
+.center .center-text .center-text-p {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+.group ul,
+.center ul {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.group ul li,
+.center ul li {
+  display: flex;
+  gap: 16px;
+  font-size: 14px;
+}
+
+aside {
+  display: flex;
+  width: full;
+  height: 44px;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 112px;
+}
+
+aside button {
+  height: inherit !important;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  color: white;
+  cursor: pointer;
+}
+
+aside .left {
+  border: 1px solid #0065fe;
+  background-color: white;
+  color: #0065fe;
+}
+
+aside .right {
+  background-color: #0065fe;
+  border: none;
 }
 
 .center {
@@ -322,6 +398,11 @@ body {
   box-shadow: 0px 4px 8px 0px #0000000d;
   background: linear-gradient(180deg, #1e3448 99.99%, rgba(30, 52, 72, 0) 100%);
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
 .floatingButton.left.next {
@@ -370,7 +451,8 @@ body {
     z-index: 2;
   }
 
-  .middle, .end-right {
+  .middle,
+  .end-right {
     position: fixed;
     top: 90px;
     right: -100%;
@@ -379,7 +461,7 @@ body {
     width: 100%;
     text-align: center;
     transition: 0.3s;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
   }
 
