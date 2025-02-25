@@ -442,9 +442,6 @@ aside .right {
 .input-text {
   height: 55px !important;
   padding: 12px;
-
-  /* align-items: center;
-    justify-content: center; */
   width: 100%;
   border-radius: 12px;
   border: 1px solid #3284ff;
@@ -460,11 +457,11 @@ aside .right {
   gap: 12px;
 }
 
-.box button{
+.box button {
   height: 48px;
   border-radius: 100px;
   border: none;
-  background-color: #005AE2;
+  background-color: #005ae2;
   color: white;
   cursor: pointer;
   display: flex;
@@ -473,10 +470,10 @@ aside .right {
   gap: 6px;
 }
 
-.box p{
+.box p {
   font-size: 14px;
   line-height: 20px;
-  color: #3284FF;
+  color: #3284ff;
 }
 
 select {
@@ -494,6 +491,32 @@ select {
 
 select::-ms-expand {
   display: none;
+}
+
+.sectionSeven {
+  background-image: url("./assets/background2.svg");
+  height: 1153px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.topper {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 52px;
+  padding-bottom: 62px;
+}
+
+.topper h1 {
+  font-size: 40px;
+  line-height: 32px;
 }
 
 @media screen and (max-width: 768px) {
@@ -574,4 +597,66 @@ select::-ms-expand {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 75%;
+  padding: 0 10px;
+  height: 100%;
+}
+
+.faq-item {
+  width: 100%;
+  border-bottom: 1px solid #D6D6D6;
+  margin-bottom: 20px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-toggle {
+  display: none;
+}
+
+.faq-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 20px;
+  color: #141414;
+  cursor: pointer;
+}
+
+.faq-label::after {
+  content: '+';
+  position: relative;
+  right: 0;
+  font-size: 24px;
+  color: #141414;
+  transition: transform 0.3s ease;
+}
+
+.faq-toggle:checked + .faq-label::after {
+  content: '-';
+  transform: rotate(0deg);
+}
+
+.faq-content {
+  line-height: 32px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  color: #141414;
+  font-size: 16px;
+  padding-right: 40px;
+}
+
+.faq-toggle:checked ~ .faq-content {
+  max-height: 500px;
 }
