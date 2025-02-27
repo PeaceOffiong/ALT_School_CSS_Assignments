@@ -18,7 +18,7 @@ body {
     position: relative;
     background: white;
     max-width: 450px;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin: 20px;
 }
@@ -41,8 +41,9 @@ body {
 .product-image {
     width: 100%;
     margin-bottom: 5px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .product-image img {
@@ -114,7 +115,6 @@ body {
     justify-content: center;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
     .product-card {
         margin: 10px;
